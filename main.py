@@ -56,11 +56,13 @@ Make your choice...
 ''')
 
 choice = int(input('> '))
+counter = 0
 
 if choice is 1:
 	MorseData = input('Type in Morse Code to convert it to regular English text\n> ')
 
 	splited_M = MorseData.split('    ')
+	splited_M.append('__END__')
 
 	for x in splited_M:
 		
@@ -119,38 +121,44 @@ if choice is 1:
 		elif x == Z:
 			print(end='Z')
 		elif x == _1:
-			print(end='1')
+			print(end=' 1 ') 
 		elif x == _2:
-			print(end='2')
+			print(end=' 2 ')
 		elif x == _3:
-			print(end='3')
+			print(end=' 3 ')
 		elif x == _4:
-			print(end='4')
+			print(end=' 4 ')
 		elif x == _5:
-			print(end='5')
+			print(end=' 5 ')
 		elif x == _6:
-			print(end='6')
+			print(end=' 6 ')
 		elif x == _7:
-			print(end='7')
+			print(end=' 7 ')
 		elif x == _8:
-			print(end='8')
+			print(end=' 8 ')
 		elif x == _9:
-			print(end='9')
+			print(end=' 9 ')
 		elif x == _0:
-			print(end='0')
+			print(end=' 0 ')
 		elif x == PERION:
-			print(end='.')
+			print(end='. ')
 		elif x == COMMA:
-			print(end=',')
+			print(end=', ')
 		elif x == QMARK:
-			print(end='?')
+			print(end='? ')
 		elif x == FSLASH:
 			print(end='/')
 		elif x == ATR:
 			print(end='@')
 
+		
+			print(splited_M[counter+1], end='')
+			counter += 1
+
+elif choice is 2:
+
+	TextData = input('Type in regular English text to convert  Morse Code\n> ')
+
+	splited_T = TextData.split(' ')
 
 
-
-
-print()
