@@ -39,7 +39,7 @@ _8 = '---..'
 _9 = '----.'
 _0 = '-----'
 
-PERION = '.-.-.-'
+PERID = '.-.-.-'
 COMMA = '--..--'
 QMARK = '..--..'
 FSLASH = '-..-.'
@@ -140,7 +140,7 @@ if choice is 1:
 			print(end=' 9 ')
 		elif x == _0:
 			print(end=' 0 ')
-		elif x == PERION:
+		elif x == PERIOD:
 			print(end='. ')
 		elif x == COMMA:
 			print(end=', ')
