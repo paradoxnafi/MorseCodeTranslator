@@ -1,33 +1,37 @@
 // Working on it.
-
 // MorseCodeTranslator
 // Data..............
 
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <sstream>
-#include "system_data"
+#include <bits/stdc++.h>
+//#include "translator.h"
 using namespace std;
+
+class translator {
+	private:
+		const string A = ".-";
+
+	public:
+		void to_morse() {
+			string u_input;
+			getline(cin, u_input);
+
+			if(u_input == A) {
+				cout << "Damn!";
+			}
+		}
+};
 
 int main()
 {
-//	const string A = ".-";
+	translator obj;
 
-	string u_input;
-	getline(cin, u_input);
-//	cout << u_input;
-
-	if(A == u_input) {
-		cout << "Damn!";
-	}
+	obj.to_morse();
 
 	return 0;
-
 }
 
 /*
-string A = '.-'
+A = '.-'
 B =  '-...'
 C = '-.-.'
 D = '-..'
@@ -188,4 +192,16 @@ elif choice is 2:
 	splited_T = TextData.split(' ')
 
 
+*/
+/*//	const string A = ".-";
+
+	string u_input;
+	getline(cin, u_input);
+//	cout << u_input;
+
+	if(A == u_input) {
+		cout << "Damn!";
+	}
+
+	return 0;
 */
