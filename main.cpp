@@ -1,14 +1,33 @@
 // Working on it.
 // MorseCodeTranslator
-// Data..............
 
 #include <bits/stdc++.h>
-//#include "translator.h"
 using namespace std;
 
 class translator {
 	private:
-		const string A = ".-";
+		const string letters[27][10];
+
+		letters[][]
+		
+
+		const string _1 = ".----";
+		const string _2 = "..---";
+		const string _3 = "...--";
+		const string _4 = "....-";
+		const string _5 = ".....";
+		const string _6 = "-....";
+		const string _7 = "--...";
+		const string _8 = "---..";
+		const string _9 = "----.";
+		const string _0 = "-----";
+
+		const string PERID = ".-.-.-";
+		const string COMMA = "--..--";
+		const string QMARK = "..--..";
+		const string FSLASH = "-..-.";
+		const string ATR = ".--.-.";
+
 
 	public:
 		void to_morse() {
@@ -16,7 +35,7 @@ class translator {
 			getline(cin, u_input);
 
 			if(u_input == A) {
-				cout << "Damn!";
+				cout << A;
 			}
 		}
 };
@@ -26,54 +45,56 @@ int main()
 	translator obj;
 
 	obj.to_morse();
+	cout << endl;
 
 	return 0;
 }
 
 /*
-A = '.-'
-B =  '-...'
-C = '-.-.'
-D = '-..'
-E = '.'
-F = '..-.'
-G = '--.'
-H = '....'
-I = '..'
-J = '.---'
-K = '-.-'
-L = '.-..'
-M = '--'
-N = '-.'
-O = '---'
-P = '.--.'
-Q = '--.-'
-R = '.-.'
-S = '...'
-T = '-'
-U = '..-'
-V = '...-'
-W = '.--'
-X = '-..-'
-Y = '-.--'
-Z = '--..'
+const string A = ".-";
+		const string B = "-...";
+		const string C = "-.-.";
+		const string D = "-..";
+		const string E = ".";
+		const string F = "..-.";
+		const string G = "--.";
+		const string H = "....";
+		const string I = "..";
+		const string J = ".---";
+		const string K = "-.-";
+		const string L = ".-..";
+		const string M = "--";
+		const string N = "-.";
+		const string O = "---";
+		const string P = ".--.";
+		const string Q = "--.-";
+		const string R = ".-.";
+		const string S = "...";
+		const string T = "-";
+		const string U = "..-";
+		const string V = "...-";
+		const string W = ".--";
+		const string X = "-..-";
+		const string Y = "-.--";
+		const string Z = "--..";
 
-_1 = '.----'
-_2 = '..---'
-_3 = '...--'
-_4 = '....-'
-_5 = '.....'
-_6 = '-....'
-_7 = '--...'
-_8 = '---..'
-_9 = '----.'
-_0 = '-----'
+		const string _1 = ".----";
+		const string _2 = "..---";
+		const string _3 = "...--";
+		const string _4 = "....-";
+		const string _5 = ".....";
+		const string _6 = "-....";
+		const string _7 = "--...";
+		const string _8 = "---..";
+		const string _9 = "----.";
+		const string _0 = "-----";
 
-PERID = '.-.-.-'
-COMMA = '--..--'
-QMARK = '..--..'
-FSLASH = '-..-.'
-ATR = '.--.-.'
+		const string PERID = ".-.-.-";
+		const string COMMA = "--..--";
+		const string QMARK = "..--..";
+		const string FSLASH = "-..-.";
+		const string ATR = ".--.-.";
+
 
 print('''
 Welcome from paradox codes. This is Morse Code Translator.
