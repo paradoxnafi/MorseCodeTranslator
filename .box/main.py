@@ -61,7 +61,7 @@ counter = 0
 if choice is 1:
 	MorseData = input('Type in Morse Code to convert it to regular English text\n> ')
 
-	splited_M = MorseData.split('    ')
+	splited_M = MorseData.split('   ')
 	splited_M.append('__END__')
 
 	for x in splited_M:
