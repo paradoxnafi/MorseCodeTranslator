@@ -79,10 +79,11 @@ void Translator::interface() { // This function will controll all tasks.
 
 	if(choice == 1) {
 		Tobj.get_morse();
-		Tobj.split_string();
+		Tobj.split_morse();
 		Tobj.to_text();
 	} else if(choice == 2) {
 		Tobj.get_text();
+		Tobj.to_morse();
 	} else if(choice == 3) {
 
 	} else if(choice == 4) {
@@ -102,7 +103,7 @@ void Translator::get_morse() { // Takes morse data at runtime from user.
 	getline(cin, morse_data);
 }
 
-void Translator::split_string() {
+void Translator::split_morse() {
 
 	total_word = -1;
     istringstream ss(morse_data);
@@ -149,6 +150,23 @@ void Translator::get_text() { // Takes text data input at runtime from user.
 	cout << "Type in English text" << endl << "\t: ";
 	cin.ignore();
 	getline(cin, text_data);
+
+}
+
+void Translator::to_morse() {
+
+	for(int i = 0; i < text_data.size(); i++) {
+
+		if(text_data[i] == ' ') {
+			cout << "|   ";
+		}
+
+		for(int j = 0; j < 46; j++) {
+			if( (all_char[j] == text_data[i]) || (all_s_char[j] == text_data[i]) ) {
+				cout << data[j] << "   ";
+			}
+		}
+	}
 }
 
 
