@@ -87,11 +87,9 @@ void Translator::interface() { // This function will controll all tasks.
 	} else if(choice == 3) {
 
 	} else if(choice == 4) {
-		do {
-			Gobj.controller();
-			cout << "Do you want to play again [Y/N]: ";
-			cin >> ask;
-		} while( (ask == 'Y')||(ask == 'y') );
+		// Game class
+		
+
 	}
 
 }

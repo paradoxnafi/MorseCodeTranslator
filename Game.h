@@ -9,7 +9,6 @@ class Game {
 
 	public:
 //		Game();
-		void controller();
 		void message();
 		void CPU();
 		void get_input();

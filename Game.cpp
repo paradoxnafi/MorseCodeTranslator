@@ -5,18 +5,6 @@
 #include "Game.h"
 using namespace std;
 
-void Game::controller() {
-	Game Gobj2;
-
-	Gobj2.message();
-
-/*	for(int i = 1; i <= Gpoint; i++) { cout << i << endl;
-		Gobj2.CPU();
-		Gobj2.get_input();           /// Why is Block doses not work?
-//		Gobj2.calculation(); 		/// I don't know. So I put it at the end of message function.				
-	} */
-}
-
 void Game::message() {
 
 	Game Gobj2;
