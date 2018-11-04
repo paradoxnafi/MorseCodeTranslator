@@ -3,14 +3,17 @@
 
 #include <iostream>
 #include <string>
+#include "Login.h"
 #include "Translator.h"
 using namespace std;
 
 int main()
 {
-	Translator obj;
+//	Translator obj;
 
-	obj.interface();
+//	obj.interface();
+
+	Login login_obj;
 
 	return 0;
 }
