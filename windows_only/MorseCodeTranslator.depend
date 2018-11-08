@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1541652315 source:d:\programming\mcode\morsecodetranslator\game.cpp
+	<iostream>
+	<sstream>
+	<string>
+	<ctime>
+	"Game.h"
+
+1541652315 d:\programming\mcode\morsecodetranslator\game.h
+
+1541654494 source:d:\programming\mcode\morsecodetranslator\login.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<conio.h>
+	"Login.h"
+
+1541652315 d:\programming\mcode\morsecodetranslator\login.h
+
+1541652315 source:d:\programming\mcode\morsecodetranslator\main.cpp
+	<iostream>
+	<string>
+	"Login.h"
+	"Translator.h"
+
+1541652315 d:\programming\mcode\morsecodetranslator\translator.h
+
+1541652315 source:d:\programming\mcode\morsecodetranslator\translator.cpp
+	<iostream>
+	<string>
+	<sstream>
+	"Translator.h"
+	"Game.h"
+
