@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include "Login.h"
+#include "conio.h"
 
 using std::cout;
 using std::cin;
@@ -23,11 +24,35 @@ Login::Login() {
 		getline(cin, USERNAME);
 
 		cout << "Password: ";
-		//
-		getline(cin, PASSWORD);
+		getpass();
+
+		cout << "\nUsername: " << USERNAME << endl;
+		cout << "Password: " << PASSWORD << endl;
 	}
 
 	if(PASSWORD == admin) {
 		cout << "Granted" << endl;
 	}
+}
+
+string Login::getpass() {
+
+    unsigned char ch = 0;
+
+    while((ch=getch())!=RETURN) {
+
+        if(ch==BACKSPACE) {
+
+            if(PASSWORD.length()!=0) {
+                cout <<"\b \b";
+                PASSWORD.resize(PASSWORD.length()-1);
+            }
+        } else {
+               PASSWORD+=ch;
+                   cout <<'*';
+        }
+    }
+
+    cout << endl;
+    return PASSWORD;
 }

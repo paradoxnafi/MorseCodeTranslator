@@ -7,8 +7,12 @@ using std::string;
 
 class Login {
 	private:
+		const char BACKSPACE = 127;
+		const char RETURN = 10;
+
 		string USERNAME;
 		string PASSWORD;
+
 		int choice;
 
 
@@ -16,6 +20,7 @@ class Login {
 		Login();
 		
 		void uname();
+		string getpass();
 };
 
 #endif
