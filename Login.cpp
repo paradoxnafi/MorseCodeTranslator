@@ -26,8 +26,7 @@ Login::Login() {
 		cout << "Password: ";
 		getpass();
 
-		cout << "\nUsername: " << USERNAME << endl;
-		cout << "Password: " << PASSWORD << endl;
+		
 	}
 
 	if(PASSWORD == admin) {
@@ -48,11 +47,18 @@ string Login::getpass() {
                 PASSWORD.resize(PASSWORD.length()-1);
             }
         } else {
-               PASSWORD+=ch;
-                   cout <<'*';
+            PASSWORD+=ch;
+            cout <<'*';
         }
     }
 
     cout << endl;
     return PASSWORD;
 }
+/*
+void Login::checker() {
+	if( (PASSWORD == "AdmiN") && (USERNAME == "admin") ) {
+		continue;
+	}// else {}
+}
+*/
