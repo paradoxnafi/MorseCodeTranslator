@@ -32,3 +32,37 @@
 	"Translator.h"
 	"Game.h"
 
+1541777122 source:c:\users\administrator\documents\github\morsecodetranslator\windows_only\game.cpp
+	<iostream>
+	<sstream>
+	<string>
+	<ctime>
+	"Game.h"
+
+1541777122 c:\users\administrator\documents\github\morsecodetranslator\windows_only\game.h
+
+1541778133 source:c:\users\administrator\documents\github\morsecodetranslator\windows_only\login.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"Login.h"
+	<conio.h>
+
+1541778944 c:\users\administrator\documents\github\morsecodetranslator\windows_only\login.h
+
+1541777612 source:c:\users\administrator\documents\github\morsecodetranslator\windows_only\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"Login.h"
+	"Translator.h"
+
+1541777122 c:\users\administrator\documents\github\morsecodetranslator\windows_only\translator.h
+
+1541777122 source:c:\users\administrator\documents\github\morsecodetranslator\windows_only\translator.cpp
+	<iostream>
+	<string>
+	<sstream>
+	"Translator.h"
+	"Game.h"
+

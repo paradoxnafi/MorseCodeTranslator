@@ -1,8 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <conio.h>
 #include "Login.h"
+#include <conio.h>
 
 using std::cout;
 using std::cin;
@@ -24,13 +24,7 @@ Login::Login() {
 		getline(cin, USERNAME);
 
 		cout << "Password: ";
-		for(int i = 0; i < 100; i++) {
-			PASSWORD[i] = getch();
-			putch('*');
-			if(PASSWORD[i] == 13) {
-				break;
-			}
-		}
+		getpass();
 
 		cout << "\nUsername: " << USERNAME << endl;
 		cout << "Password: " << PASSWORD << endl;
@@ -40,13 +34,25 @@ Login::Login() {
 		cout << "Granted" << endl;
 	}
 }
-/*
-char s[10] = { 0 };
-    int i;
-    for (i = 0; i < 10;i++) {
-        s[i] = getch(); putch('*');
-        if (s[i] == 13) break;
-    };
-    printf("\nYour pass is %s", s);
-    getchar();
-*/
+
+string Login::getpass() {
+
+    unsigned char ch = 0;
+
+    while((ch=getch())!=RETURN) {
+
+        if(ch==BACKSPACE) {
+
+            if(PASSWORD.length()!=0) {
+                cout <<"\b \b";
+                PASSWORD.resize(PASSWORD.length()-1);
+            }
+        } else {
+               PASSWORD+=ch;
+                   cout <<'*';
+        }
+    }
+
+    cout << endl;
+    return PASSWORD;
+}
