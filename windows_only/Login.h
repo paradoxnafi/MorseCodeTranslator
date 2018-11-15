@@ -10,17 +10,14 @@ class Login {
 		const char BACKSPACE = 8;
 		const char RETURN = 13;
 
-		string USERNAME;
-		string PASSWORD;
+		string USERNAME, PASSWORD, temp;
 
-		int choice;
+		int choice, ask;
 
 
 	public:
 		Login();
 
-		void uname();
 		string getpass();
 };
-
 #endif

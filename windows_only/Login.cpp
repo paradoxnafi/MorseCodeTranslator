@@ -2,36 +2,38 @@
 #include <fstream>
 #include <string>
 #include "Login.h"
+#include "Translator.h"
 #include <conio.h>
 
 using std::cout;
 using std::cin;
 using std::endl;
 using std::string;
-//using std::getline; // Works fine without it
 
 Login::Login() {
 
-	cout << "Morse Code Translator\n\n";
-	cout << "[1] Login\n";
-	cout << "[2] Signup\n";
-	cout << "\t:";
-	cin >> choice;
+	while(ask) {
+		cout << "Morse Code Translator\n\n";
 
-	if(choice == 1) {
 		cout << "Username: ";
-		cin.ignore();
+	//	cin.ignore();
 		getline(cin, USERNAME);
 
 		cout << "Password: ";
-		getpass();
+		PASSWORD = getpass();
+		cout << USERNAME << "\t" << PASSWORD << endl;
 
-		cout << "\nUsername: " << USERNAME << endl;
-		cout << "Password: " << PASSWORD << endl;
-	}
+		if( (USERNAME == "admin") && (PASSWORD == "AdmiN") ) {
+			Translator T_obj;
+			T_obj.interface();
+		} else {
+			cout << "Wrong Password\n";
 
-	if(PASSWORD == admin) {
-		cout << "Granted" << endl;
+		}
+
+		cout << "Do you want to try again[0/1]: ";
+		cin >> ask;
+		cout << endl;
 	}
 }
 

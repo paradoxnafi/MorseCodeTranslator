@@ -66,3 +66,38 @@
 	"Translator.h"
 	"Game.h"
 
+1542253427 source:c:\users\student\.atom\.apm\morsecodetranslator\windows_only\game.cpp
+	<iostream>
+	<sstream>
+	<string>
+	<ctime>
+	"Game.h"
+
+1542253427 c:\users\student\.atom\.apm\morsecodetranslator\windows_only\game.h
+
+1542261471 source:c:\users\student\.atom\.apm\morsecodetranslator\windows_only\login.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"Login.h"
+	"Translator.h"
+	<conio.h>
+
+1542261321 c:\users\student\.atom\.apm\morsecodetranslator\windows_only\login.h
+
+1542260790 source:c:\users\student\.atom\.apm\morsecodetranslator\windows_only\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"Login.h"
+	"Translator.h"
+
+1542260729 c:\users\student\.atom\.apm\morsecodetranslator\windows_only\translator.h
+
+1542261019 source:c:\users\student\.atom\.apm\morsecodetranslator\windows_only\translator.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<sstream>
+	"Translator.h"
+
