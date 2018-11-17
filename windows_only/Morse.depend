@@ -27,3 +27,31 @@
 	"Login.h"
 	"Translator.h"
 
+1542464156 source:c:\documents and settings\administrator\my documents\programming\morsecodetranslator-master\windows_only\login.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+	"Login.h"
+	"Translator.h"
+	<conio.h>
+
+1542464068 c:\documents and settings\administrator\my documents\programming\morsecodetranslator-master\windows_only\login.h
+
+1542464066 c:\documents and settings\administrator\my documents\programming\morsecodetranslator-master\windows_only\translator.h
+
+1542464069 source:c:\documents and settings\administrator\my documents\programming\morsecodetranslator-master\windows_only\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"Login.h"
+	"Translator.h"
+
+1542464341 source:c:\documents and settings\administrator\my documents\programming\morsecodetranslator-master\windows_only\translator.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+	<fstream>
+	<sstream>
+	"Translator.h"
+	"Login.h"
+

@@ -25,16 +25,8 @@ Login::Login() {
 	if( (USERNAME == "admin") && (PASSWORD == "AdmiN") ) {
 		ask = 1;
 	} else {
-		cout << "\nWrong Password\n";
-		cout << "Try again [0/1]: ";
-		int t_ask;
-		cin >> t_ask;
-
-		if(t_ask == 1) {
-			goto retry;
-		} else {
+		cout << "\nWrong Password\n";	
 			goto end;
-		}
 	}
 
 	while(ask) {
@@ -43,7 +35,7 @@ Login::Login() {
 
 		Translator T_obj;
 		T_obj.interface();
-		cout << "Return to main menu[0/1]: ";
+		cout << "\n\nReturn to main menu[0/1]: ";
 		cin >> ask;
 	}
 

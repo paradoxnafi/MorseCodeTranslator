@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 #include <string>
 #include <fstream>
 #include <sstream>
@@ -8,7 +9,7 @@ using namespace std;
 
 Translator::Translator() { // This function will initialize most of the data.
 
-	ifstream M_data("morse.txt");
+	ifstream M_data("Data/morse.dat");
 
 	for(int i = 0; i < 46; i++) {
 		M_data >> data[i];
@@ -42,7 +43,7 @@ void Translator::interface() { // This function will controll all tasks.
 		to_morse();
 		want_to_write2();
 	} else if(choice == 3) {
-
+		show_file();
 	} else if(choice == 4) {
 		show_help();
 	} else if(choice == 5) {
@@ -191,8 +192,9 @@ void Translator::want_to_write2() {
 
 void Translator::show_about() {
 	char c;
+	system("cls");
 
-	ifstream about_file("about.txt");
+	ifstream about_file("Data/about.dat");
 
 	while(about_file.get(c)) {
 		cout << c;
@@ -201,8 +203,9 @@ void Translator::show_about() {
 
 void Translator::show_help() {
 	char c;
-
-	ifstream help_file("help.txt");
+	system("cls");
+	
+	ifstream help_file("Data/help.dat");
 
 	while(help_file.get(c)) {
 		cout << c;

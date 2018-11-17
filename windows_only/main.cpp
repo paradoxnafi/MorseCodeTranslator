@@ -24,7 +24,7 @@ int main()
 void logo() {
 	char c;
 
-	ifstream logo_file("logo");
+	ifstream logo_file("Data/logo");
 
 	while(logo_file.get(c)) {
 		cout << c;
