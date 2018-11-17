@@ -11,6 +11,8 @@ class Translator {
 		std::string morse_data;
 		std::string text_data;
 		std::string data[50];
+		std::string s_file_name;
+		std::string r_file_name;
 		std::string store_word[2048]; // Maximum 2048 words are supported ata a time.
 									  // Woking on it to remove this limitation.
 		public:
@@ -24,8 +26,13 @@ class Translator {
 
 			void get_text();
 			void to_morse();
+			void want_to_write1();
+			void want_to_write2();
 
-			~Translator();
+			void show_file();
+			void show_about();
+			void show_help();
+
 };
 
 #endif

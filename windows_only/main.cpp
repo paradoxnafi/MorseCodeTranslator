@@ -1,5 +1,3 @@
-// MorseCodeTranslator
-
 #include <iostream>
 #include <string>
 #include <fstream>

@@ -16,10 +16,10 @@ void logo();
 
 int main()
 {
+	logo();
 //	Translator obj;
 
 //	obj.interface();
-	logo();
 
 	Login login_obj;
 

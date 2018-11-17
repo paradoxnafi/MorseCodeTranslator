@@ -3,8 +3,6 @@
 
 using std::string;
 
-#define admin "AdmiN"
-
 class Login {
 	private:
 		const char BACKSPACE = 8;

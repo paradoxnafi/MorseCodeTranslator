@@ -1,5 +1,5 @@
 #include <iostream>
-#include <fstream>
+#include <cstdlib>
 #include <string>
 #include "Login.h"
 #include "Translator.h"
@@ -12,29 +12,44 @@ using std::string;
 
 Login::Login() {
 
-	while(ask) {
-		cout << "Morse Code Translator\n\n";
+	cout << "Morse Code Translator\n\n";
 
-		cout << "Username: ";
-	//	cin.ignore();
-		getline(cin, USERNAME);
+	retry:
 
-		cout << "Password: ";
-		PASSWORD = getpass();
-		cout << USERNAME << "\t" << PASSWORD << endl;
+	cout << "Username: ";
+	getline(cin, USERNAME);
 
-		if( (USERNAME == "admin") && (PASSWORD == "AdmiN") ) {
-			Translator T_obj;
-			T_obj.interface();
+	cout << "Password: ";
+	PASSWORD = getpass();
+
+	if( (USERNAME == "admin") && (PASSWORD == "AdmiN") ) {
+		ask = 1;
+	} else {
+		cout << "\nWrong Password\n";
+		cout << "Try again [0/1]: ";
+		int t_ask;
+		cin >> t_ask;
+
+		if(t_ask == 1) {
+			goto retry;
 		} else {
-			cout << "Wrong Password\n";
-
+			goto end;
 		}
-
-		cout << "Do you want to try again[0/1]: ";
-		cin >> ask;
-		cout << endl;
 	}
+
+	while(ask) {
+
+		system("cls");
+
+		Translator T_obj;
+		T_obj.interface();
+		cout << "Return to main menu[0/1]: ";
+		cin >> ask;
+	}
+
+	end:
+
+	cout << "\nGood bye!!!";
 }
 
 string Login::getpass() {
