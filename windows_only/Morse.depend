@@ -55,3 +55,31 @@
 	"Translator.h"
 	"Login.h"
 
+1543204479 source:c:\users\student\.atom\.apm\pr39\morsecodetranslator\windows_only\login.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+	"Login.h"
+	"Translator.h"
+	<conio.h>
+
+1543204218 c:\users\student\.atom\.apm\pr39\morsecodetranslator\windows_only\login.h
+
+1543204218 c:\users\student\.atom\.apm\pr39\morsecodetranslator\windows_only\translator.h
+
+1543204218 source:c:\users\student\.atom\.apm\pr39\morsecodetranslator\windows_only\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"Login.h"
+	"Translator.h"
+
+1543204218 source:c:\users\student\.atom\.apm\pr39\morsecodetranslator\windows_only\translator.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+	<fstream>
+	<sstream>
+	"Translator.h"
+	"Login.h"
+

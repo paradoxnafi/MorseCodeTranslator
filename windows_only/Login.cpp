@@ -25,7 +25,7 @@ Login::Login() {
 	if( (USERNAME == "admin") && (PASSWORD == "AdmiN") ) {
 		ask = 1;
 	} else {
-		cout << "\nWrong Password\n";	
+		cout << "\nWrong Password\n";
 			goto end;
 	}
 
