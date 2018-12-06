@@ -144,8 +144,8 @@ void  Translator::want_to_write1() {
 		ofstream file1;
 		file1.open(s_file_name.c_str());
 
-		file1 << morse_data << "\n\t: "; 
-		
+		file1 << morse_data << "\n\t: ";
+
 		for(int i = 0; i < total_word; i++) {
 
 			if(store_word[i] == "|") {
@@ -185,7 +185,7 @@ void Translator::want_to_write2() {
 		file2.open(s_file_name.c_str());
 
 		file2 << text_data << "\n\t: ";
-			
+
 		for(int i = 0; i < text_data.size(); i++) {
 
 			if(text_data[i] == ' ') {
@@ -221,7 +221,7 @@ void Translator::show_about() {
 void Translator::show_help() {
 	char c;
 	system("cls");
-	
+
 	ifstream help_file("Data/help.dat");
 
 	while(help_file.get(c)) {

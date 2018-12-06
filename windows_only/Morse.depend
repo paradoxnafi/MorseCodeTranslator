@@ -83,3 +83,31 @@
 	"Translator.h"
 	"Login.h"
 
+1544077776 source:c:\users\student\desktop\morsecodetranslator\windows_only\login.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+	"Login.h"
+	"Translator.h"
+	<conio.h>
+
+1544075269 c:\users\student\desktop\morsecodetranslator\windows_only\login.h
+
+1544075269 c:\users\student\desktop\morsecodetranslator\windows_only\translator.h
+
+1544075269 source:c:\users\student\desktop\morsecodetranslator\windows_only\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"Login.h"
+	"Translator.h"
+
+1544077808 source:c:\users\student\desktop\morsecodetranslator\windows_only\translator.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+	<fstream>
+	<sstream>
+	"Translator.h"
+	"Login.h"
+
