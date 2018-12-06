@@ -23,8 +23,9 @@ void Translator::interface() { // This function will controll all tasks.
 	cout << "[1] Morse code to English" << endl;
 	cout << "[2] English to Morse code" << endl;
 	cout << "[3] Read from a file" << endl;
-	cout << "[4] Help" << endl;
-	cout << "[5] Exit" << endl;
+	cout << "[4] List existng files" << endl;
+	cout << "[5] Help" << endl;
+	cout << "[6] Exit" << endl;
 
 	cout << endl << "Choose an option..." << endl;
 	cout << "\t: ";
@@ -45,8 +46,10 @@ void Translator::interface() { // This function will controll all tasks.
 	} else if(choice == 3) {
 		show_file();
 	} else if(choice == 4) {
-		show_help();
+		list_file();
 	} else if(choice == 5) {
+		show_help();
+	} else if(choice == 6) {
 		cout << "\nAre you sure?\n";
 	}
 
@@ -136,9 +139,12 @@ void  Translator::want_to_write1() {
 	if(t_ask == 1) {
 		cout << "File name: ";
 		cin >> s_file_name;
+		s_file_name = "Saved/" + s_file_name;
 
 		ofstream file1;
 		file1.open(s_file_name.c_str());
+
+		file1 << morse_data << "\n\t: "; 
 		
 		for(int i = 0; i < total_word; i++) {
 
@@ -159,6 +165,8 @@ void  Translator::want_to_write1() {
 				}
 			}
 		}
+
+		file1.close();
 	}
 }
 
@@ -171,9 +179,12 @@ void Translator::want_to_write2() {
 	if(t_ask == 1) {
 		cout << "File name: ";
 		cin >> s_file_name;
+		s_file_name = "Saved/" + s_file_name;
 
 		ofstream file2;
 		file2.open(s_file_name.c_str());
+
+		file2 << text_data << "\n\t: ";
 			
 		for(int i = 0; i < text_data.size(); i++) {
 
@@ -187,7 +198,13 @@ void Translator::want_to_write2() {
 				}
 			}
 		}
+
+		file2.close();
 	}
+}
+
+void Translator::list_file() {
+	system("dir Saved");
 }
 
 void Translator::show_about() {
@@ -217,6 +234,8 @@ void Translator::show_file() {
 
 	cout << "File name: ";
 	cin >> r_file_name;
+
+	r_file_name = "Saved/" + r_file_name;
 
 	ifstream sh_file(r_file_name.c_str());
 
